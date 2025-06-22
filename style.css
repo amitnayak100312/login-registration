@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+}
+
+body.login{
+    background: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%),
+        linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 100%);
+    color: rgb(19, 47, 47);
+    font-family: 'Trebuchet MS';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffff;
+    margin-bottom: 36%;
+}
+body {
+    background: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%),
+        linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 100%);
+    color: rgb(19, 47, 47);
+    font-family: 'Trebuchet MS';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 22vh;
+    color: #ffff;
+}
+
+.penal-1 {
+    border-radius: 15px;
+    padding-top: 50px;
+    text-align: center;
+    margin-top: 15vh;
+    border: 3px solid transparent;
+    box-shadow: 5px 5px 20px rgb(35, 21, 21);
+}
+
+.penal-2 {
+    text-align: left;
+    padding: 30px;
+    display: block;
+    justify-content: space-around;
+}
+
+.label1 {
+    padding: 2px;
+    margin: 2px;
+}
+
+.add {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-reg {
+    padding-top: 15px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.button-reg input {
+    background-color: transparent;
+    border: none;
+    font-family: 'Trebuchet MS';
+    font-size: 15px;
+    border: 2px solid #ffff;
+    color:#ffff;
+    border-radius: 30px;
+    width: 150px;
+    height: 40px;
+}
+
+select {
+    color: #ffff;
+    font-family: 'Trebuchet MS';
+    border-radius: 20px;
+    background-color: transparent;
+    width: 93px;
+    height: 30px;
+    border: 2px solid;
+}
+
+i {
+    text-align: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+#text {
+    font-family: 'Trebuchet MS';
+    text-align: center;
+    border: transparent;
+    width: 250px;
+    height: 30px;
+    border-radius: 50px;
+}
+
+.login {
+    padding: 20px;
+}
+
+.login2 {
+    padding: 20px;
+
+}
+
+.button-reg input:hover {
+    border: 2px solid #ffff;
+    background-color: #9649CB;
+    color: #ffff;
+    box-shadow: 5px 5px 10px #ff12ff;
+    width: 155px;
+    height: 45px;
+    transform: scale(1.08);
+}
+
+.gender {
+    font-size: 18px; 
+}
+
+#gender {
+   
+    margin-left: 20px;
+    text-align: center;
+    font-size: 0px;
+}
+
+@media (max-width: 600px) {
+    body {
+        flex-direction: column;
+        margin-bottom: 5vh;
+        padding: 10px;
+    }
+    .penal-1 {
+        margin-top: 5vh;
+        padding-top: 20px;
+        box-shadow: 2px 2px 10px rgb(35, 21, 21);
+    }
+    .penal-2 {
+        padding: 10px;
+    }
+    #text {
+        width: 90vw;
+        min-width: 120px;
+    }
+    .button-reg input {
+        width: 100px;
+        height: 35px;
+        font-size: 13px;
+    }
+    select {
+        width: 70px;
+        height: 25px;
+        font-size: 13px;
+    }
+}
