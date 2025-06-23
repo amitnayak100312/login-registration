@@ -1,10 +1,10 @@
-/* Registration Page Styles - register.html */
+/* Login Page Styles - index.html */
 * {
     margin: 0;
     box-sizing: border-box;
 }
 
-body {
+body.login {
     background: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%),
                 linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
                 linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 100%);
@@ -17,27 +17,26 @@ body {
     color: #fff;
 }
 
-.penal-1 {
+.penal-1.login2 {
     background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     border-radius: 15px;
     padding: 30px;
     width: 100%;
-    max-width: 450px;
+    max-width: 400px;
+    text-align: center;
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    margin: 20px 0;
 }
 
-.heading h2 {
+.heading.login h2 {
     margin-bottom: 25px;
     font-size: 28px;
     color: #fff;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    text-align: center;
 }
 
-.leble1, .leble {
+.leble {
     margin-bottom: 20px;
     position: relative;
 }
@@ -72,70 +71,8 @@ body {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.gender {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 20px;
-    padding-left: 40px;
-}
-
-.gender-options {
-    display: flex;
-    gap: 15px;
-}
-
-.gender-options label {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    cursor: pointer;
-}
-
-#gender {
-    width: 16px;
-    height: 16px;
-    
-    accent-color: #9649CB;
-    cursor: pointer;
-}
-
-.add {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 20px;
-}
-
-.add .leble {
-    flex: 1;
-}
-
-select {
-    width: 100%;
-    padding: 10px 15px 10px 40px;
-    border-radius: 30px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    background-color: rgba(255, 255, 255, 0.1);
-    color: #fff;
-    font-size: 16px;
-    outline: none;
-    appearance: none;
-    cursor: pointer;
-}
-
-select:focus {
-    border-color: #9649CB;
-    box-shadow: 0 0 0 3px rgba(150, 73, 203, 0.3);
-}
-
-select option {
-    background-color: rgba(0, 0, 0, 0.9);
-    color: #fff;
-}
-
-.button-reg {
+.button-reg.login {
     margin: 25px 0 15px;
-    text-align: center;
 }
 
 .button-reg input {
@@ -143,7 +80,7 @@ select option {
     border: none;
     color: white;
     padding: 12px 0;
-    width: 150px;
+    width: 100%;
     border-radius: 30px;
     font-size: 16px;
     cursor: pointer;
@@ -155,14 +92,12 @@ select option {
     background-color: #9649CB;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(150, 73, 203, 0.4);
-    width: 155px;
 }
 
 .link-click {
     margin-top: 15px;
     color: rgba(255, 255, 255, 0.8);
     font-size: 14px;
-    text-align: center;
 }
 
 .link-click a {
@@ -179,48 +114,31 @@ select option {
 
 /* Mobile Responsiveness */
 @media (max-width: 600px) {
-    body {
+    body.login {
         padding: 15px;
         background: linear-gradient(217deg, rgba(255, 0, 0, 0.9), rgba(255, 0, 0, 0) 60%),
                     linear-gradient(127deg, rgba(0, 255, 0, 0.9), rgba(0, 255, 0, 0) 60%),
                     linear-gradient(336deg, rgba(0, 0, 255, 0.9), rgba(0, 0, 255, 0) 90%);
     }
 
-    .penal-1 {
+    .penal-1.login2 {
         padding: 25px 20px;
         border-radius: 12px;
     }
 
-    .heading h2 {
+    .heading.login h2 {
         font-size: 24px;
         margin-bottom: 20px;
     }
 
-    .add {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    #text, select {
+    #text {
         padding: 10px 15px 10px 40px;
         font-size: 15px;
     }
 
-    .gender {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-        padding-left: 0;
-    }
-
     .button-reg input {
-        width: 130px;
         padding: 10px 0;
         font-size: 15px;
-    }
-
-    .button-reg input:hover {
-        width: 135px;
     }
 
     .link-click {
